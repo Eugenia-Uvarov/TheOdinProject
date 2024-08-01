@@ -1,0 +1,108 @@
+/* =========================== */
+/* Selectors */
+/* Universal Selector: */
+* {
+  color: purple;
+}
+
+/* Type selectors: */
+div {
+  color: white;
+}
+
+/* Class selectors */
+
+.alert-text {
+  color: red;
+}
+
+/* add multiple classes to a single element as a space-separated list */
+
+class="alert-text severe-alert"
+
+/* ID selectors */
+
+#title {
+  background-color: red;
+}
+
+/* The grouping selector */
+
+.read,
+.unread {
+  color: white;
+  background-color: black;
+}
+
+.read {
+  /* several unique declarations */
+}
+
+.unread {
+  /* several unique declarations */
+}
+
+/* Chaining selectors */
+/* we only want to apply a separate rule to the element that also has header as a second class */
+
+.subsection.header {
+  color: red;
+}
+
+/* This can also be used to chain a class and an ID, as shown below: */
+
+.subsection#preview {
+  color: blue;
+}
+
+/* Descendant combinator */
+
+.ancestor .contents {
+  /* some declarations */
+}
+
+/* ================================ */
+/* Properties */
+
+/* The color property sets an element’s text color: */
+
+p {
+  /* hex example: */
+  color: #1100ff;
+}
+
+p {
+  /* rgb example: */
+  color: rgb(100, 0, 127);
+}
+
+p {
+  /* hsl example: */
+  color: hsl(15, 82%, 56%);
+}
+
+/* background-color sets, the background color of an element */
+
+
+p{ background-color: 
+  pink;
+}
+
+/* Typography basics and text-align */
+
+/* font-family can be a single value or a comma-separated list of values that determine what font an element uses. */
+/* “generic family name” like serif (generic family names never use quotes) */
+
+p{
+  font-family: "Times New Roman", serif;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center; 
+  /* text-align will align text horizontally within an element, and you can use the common keywords you may have come across in word processors as the value for this property */
+}
+
+/* Image height and width */
+img {
+  height: auto;  /*  adjust the size of the image without causing it to lose its proportions */
+  width: 500px;
+}
